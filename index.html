@@ -37,14 +37,20 @@
 <body class="font-lato">
   <!-- nav bar  -->
 <section class="lg:text-white max-w-screen-xl mx-auto my-10 px-8 md:px-16 lg:px-24">
-    <div class="navbar bg-base-100 lg:bg-rose-500 rounded-full">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <ul tabindex="0" class="menu menu-sm dropdown-content text-black mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+    <div class="navbar flex flex-row-reverse lg:flex-row justify-start lg:justify-between bg-base-100 lg:bg-rose-500 rounded-full">
+        <div class="">
+          <div class="dropdown dropdown-left">
+            <ul tabindex="0" class="menu dropdown-content text-black mt-10 z-[1] p-2 shadow bg-base-100 rounded-box w-60">
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
                 <li><a>All Fruit</a></li>
+                <li><div class="w-16">
+                  <div class="form-control lg:block relative ">
+                      <input type="text" placeholder="Search" class="input input-bordered w-auto md:w-auto rounded-full" />
+                      <button><i class="fa-solid fa-magnifying-glass text-gray-400  text-xl absolute right-2 top-2"></i></button>
+                    </div>
+              </div></li>
               </ul>
             
 
@@ -54,7 +60,7 @@
               </label>
           </div>
           
-          <div class="navbar-center hidden lg:flex">
+          <div class="hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
@@ -67,12 +73,12 @@
             
           </div>
         </div>
-        <div>
+        <div class="flex-1 lg:justify-center justify-start -ms-20">
             <img src="/images/logo.png" alt="">
-            <a class="btn btn-ghost normal-case text-2xl">Fruit Burst</a>
+            <a class="normal-case text-2xl ms-2 font-bold"> Fruit Burst</a>
         </div>
 
-        <div class="navbar-end px-10">
+        <div class=" px-10">
             <div class="form-control hidden lg:block relative ">
                 <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full" />
                 <button><i class="fa-solid fa-magnifying-glass text-gray-400  text-xl absolute right-7 top-2"></i></button>
